@@ -1,0 +1,12 @@
+{
+  "id": "visual.dual-thread",
+  "version": "1.0.0",
+  "load": "auto",
+  "triggers": ["image", "screenshot", "visual review", "layout", "ocr", "pixel diff"],
+  "requires": ["powershell for helper scripts"],
+  "provides": ["zero-image main session", "vision request handoff", "compact JSON result"],
+  "remoteCalls": true,
+  "writes": ["work/vision-requests", "work/vision-inbox", "work/vision-results", "outputs/VISION-FACTS.md"],
+  "fallback": "Use the text protocol only; do not load images into the main task."
+}
+

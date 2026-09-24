@@ -1,0 +1,12 @@
+{
+  "id": "runtime.codex-app",
+  "version": "1.0.0",
+  "load": "auto",
+  "triggers": ["codex app", "automation", "artifact", "inline review", "open in app"],
+  "requires": ["codex app tools"],
+  "provides": ["app-native artifact and automation conventions"],
+  "remoteCalls": false,
+  "writes": ["as directed by user request"],
+  "fallback": "Use plain file paths and normal chat responses."
+}
+

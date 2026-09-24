@@ -1,0 +1,12 @@
+{
+  "id": "model-routing.deepseek-cc-switch",
+  "version": "1.0.0",
+  "load": "auto",
+  "triggers": ["deepseek", "cc-switch", "cc switch", "model routing", "token price", "cache price"],
+  "requires": ["powershell"],
+  "provides": ["model defaults", "price estimate", "cc-switch sync"],
+  "remoteCalls": true,
+  "writes": ["cc-switch database when sync script is explicitly run"],
+  "fallback": "Use Core budget ranges and do not modify provider configuration."
+}
+

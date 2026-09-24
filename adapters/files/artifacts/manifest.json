@@ -1,0 +1,12 @@
+{
+  "id": "files.artifacts",
+  "version": "1.0.0",
+  "load": "auto",
+  "triggers": ["docx", "word", "pptx", "slides", "xlsx", "csv", "spreadsheet", "pdf", "presentation", "document"],
+  "requires": ["bundled artifact skills"],
+  "provides": ["routing from requested file type to the relevant artifact skill"],
+  "remoteCalls": false,
+  "writes": ["requested artifact files"],
+  "fallback": "Use plain Markdown or text output and tell the user the artifact toolchain is unavailable."
+}
+

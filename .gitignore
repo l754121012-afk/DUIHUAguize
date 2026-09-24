@@ -1,0 +1,14 @@
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.log
+secrets/
+private/
+work/vision-inbox/
+work/vision-results/
+outputs/*
+!outputs/.gitkeep
+

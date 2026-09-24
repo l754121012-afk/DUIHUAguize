@@ -1,0 +1,12 @@
+{
+  "id": "engine.godot",
+  "version": "1.0.0",
+  "load": "auto",
+  "triggers": ["godot", "gdscript", "scene", "tscn", "resource", "import", "headless"],
+  "requires": ["godot executable"],
+  "provides": ["verification commands", "warning-as-error guidance", "content-safe workflow"],
+  "remoteCalls": false,
+  "writes": ["project files when the task requires"], 
+  "fallback": "Inspect project files manually and state that Godot validation was unavailable."
+}
+

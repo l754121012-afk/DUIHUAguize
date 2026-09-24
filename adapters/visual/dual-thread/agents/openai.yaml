@@ -1,0 +1,4 @@
+interface:
+  display_name: "双会话视觉工作流"
+  short_description: "文本主会话与短命视觉审图会话的固定协同流程。"
+  default_prompt: "使用 $dual-thread-vision-workflow 创建视觉任务单，并按固定格式在主会话与视觉审图会话之间交接。"
