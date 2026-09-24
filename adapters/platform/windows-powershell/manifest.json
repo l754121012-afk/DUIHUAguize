@@ -2,11 +2,10 @@
   "id": "platform.windows-powershell",
   "version": "1.0.0",
   "load": "auto",
-  "triggers": ["powershell", "windows", "non-admin", "start-process", "path safety"],
+  "triggers": ["powershell", "windows", "non-admin", "start-process", "path safety", "local proxy", "proxy diagnostics"],
   "requires": ["powershell"],
   "provides": ["safe shell rules", "background process handling", "path validation"],
   "remoteCalls": false,
   "writes": ["only inside the requested workspace"],
   "fallback": "Use a POSIX shell implementation when PowerShell is unavailable."
 }
-

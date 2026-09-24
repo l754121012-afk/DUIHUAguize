@@ -28,3 +28,15 @@ Before ending a long task, record:
 
 Attach every created PR to the current task and include verification evidence in the PR body.
 
+## Remote push failures
+
+When GitHub push fails:
+
+1. Read the current proxy configuration.
+2. Test whether the configured proxy port is actually listening.
+3. Try direct connection once.
+4. Try known local helper ports and identify the owning process.
+5. Use the working proxy only as a command-level override first.
+6. Push, then verify the remote commit with `ls-remote`.
+
+Read `references/remote-push-troubleshooting.md`.

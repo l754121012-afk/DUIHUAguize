@@ -19,3 +19,8 @@ description: Safe Windows and PowerShell execution rules for Codex tasks, includ
 - Capture only the relevant final lines for long test output.
 - When long-running processes are needed, poll the session and close it before final response.
 
+## Local proxy diagnostics
+
+For Git/GitHub or other remote failures, check stale proxy settings before changing remote URLs or credentials.
+
+Read `references/local-proxy-diagnostics.md`.

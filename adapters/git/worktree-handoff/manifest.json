@@ -2,11 +2,10 @@
   "id": "git.worktree-handoff",
   "version": "1.0.0",
   "load": "auto",
-  "triggers": ["git", "dirty worktree", "commit", "push", "pull request", "handoff", "continuation"],
+  "triggers": ["git", "dirty worktree", "commit", "push", "push failure", "proxy", "pull request", "handoff", "continuation"],
   "requires": ["git"],
   "provides": ["worktree safety", "handoff discipline", "PR attachment reminders"],
   "remoteCalls": true,
   "writes": ["git index/history only when user requests or task requires a push"],
   "fallback": "Provide a patch or changed-file list without committing."
 }
-

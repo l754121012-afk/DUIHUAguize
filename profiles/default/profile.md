@@ -37,3 +37,9 @@ This profile is user-specific and may be replaced without changing Core.
 - Do not revert files not owned by the current task.
 - Use the same-class audit after fixing a pattern.
 
+## Local network profile
+
+- Existing global Git proxy settings may be stale.
+- In the current Windows environment, the Vortex helper commonly listens on `127.0.0.1:7897`.
+- A stale `127.0.0.1:7890` setting has previously existed and may fail when no process is listening.
+- Treat these as environment hints, not Core rules. Verify the active port before using it.
