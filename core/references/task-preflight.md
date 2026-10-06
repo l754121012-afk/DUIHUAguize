@@ -8,7 +8,7 @@ Task Preflight is a short decision tool, not a long design document.
 - 目标
 - 工作量：S | M | L | XL
 - 适配器：Core + <视觉 | DeepSeek | Godot | Windows | Codex App | Artifacts | Git>
-- 预计消耗或预算区间
+- 预计消耗与成本：输入 / 输出 / 缓存命中（如可估）；非高峰与高峰价格区间
 - 执行步骤
 - 同类排查：范围 | 代表样本 | 本轮必须验证的同类项
 - 主要风险
@@ -17,6 +17,15 @@ Task Preflight is a short decision tool, not a long design document.
 ```
 
 Keep the normal form within 8 lines. XL tasks may use up to 12 lines.
+
+Every task must also carry a completion counterpart:
+
+```text
+- 消耗验证：实际输入 / 输出 / 缓存命中 / 成本 | 数据来源 | 对预检的偏差 | 偏差原因与下次修正
+```
+
+If exact usage is unavailable, state the estimation basis explicitly; never silently omit the
+expected or actual cost check.
 
 ## Carry-forward rule
 
@@ -40,4 +49,3 @@ Use provider adapters for model-specific prices. The Core gives relative ranges 
 - S/M: execute after the Preflight.
 - L: show the split, then execute only the first slice.
 - XL: do not implement until scope is confirmed.
-

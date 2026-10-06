@@ -17,7 +17,8 @@
 
 ```text
 使用 $agent-collaboration-protocol。
-开始前先根据任务规模输出 Task Preflight。
+开始前先根据任务规模输出 Task Preflight（含预计 token 与成本区间）。
+完成时报告实际 token/成本、数据来源、偏差与原因。
 ```
 
 需要视觉、DeepSeek/CC Switch、Godot、PowerShell 或 Codex App 能力时，由 Core 按触发条件加载对应 adapter。
@@ -27,4 +28,3 @@
 本仓库只保存通用协议和适配器，不保存项目记忆、rollout 摘要、API 密钥、私有路径或具体项目历史。
 
 详见 `SECURITY.md`。
-

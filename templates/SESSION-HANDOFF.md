@@ -8,11 +8,12 @@
 
 ## Verification
 
-## Open blockers
+## Expected vs actual cost
 
 ## Same-class audit
+
+## Open blockers
 
 ## Next step
 
 ## Paste-ready opening prompt
-

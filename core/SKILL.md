@@ -10,7 +10,8 @@ Use this as the invariant protocol layer. It must remain independent of any proj
 ## Start of task
 
 1. Identify whether the request is S, M, L or XL.
-2. For M and above, output a Task Preflight before implementation.
+2. For M and above, output a Task Preflight before implementation, including expected input,
+   output, cache-hit and price range.
 3. Select adapters from `../adapters/registry.md` when the task involves their triggers.
 4. Read the project handoff and smallest relevant source slice before doing broad search.
 5. If the previous turn raised a possible same-class problem, carry it into the current Preflight as a required audit item.
@@ -24,6 +25,8 @@ Use this as the invariant protocol layer. It must remain independent of any proj
 - Do not repeat the same failed reason without new evidence.
 - Keep unrelated refactors out of the deliverable.
 - Do not claim completion without a command, test, state assertion or other evidence.
+- At completion, compare actual token/cost consumption with the Preflight; report the data source,
+   variance and correction. If exact usage is unavailable, label the estimate and its basis.
 
 ## Communication
 
@@ -54,4 +57,3 @@ Read:
 - `references/completion-and-handoff.md`
 
 Only load the references needed for the current task.
-

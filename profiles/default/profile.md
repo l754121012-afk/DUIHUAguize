@@ -19,7 +19,7 @@ This profile is user-specific and may be replaced without changing Core.
 ## Reporting
 
 - Progress update: one or two sentences.
-- Final report: changes, verification, same-class audit, unresolved items.
+- Final report: changes, verification, expected vs actual token/cost, same-class audit, unresolved items.
 - Prefer quantified evidence, parameter changes and command results.
 - Avoid long explanations unless the user asks for reasoning.
 
@@ -28,6 +28,8 @@ This profile is user-specific and may be replaced without changing Core.
 - Prefer handoff/index first and minimal local reads.
 - Avoid repository-wide reads unless evidence requires it.
 - Track token estimates and use provider adapters for model-specific prices.
+- Every non-trivial task must show both the Task Preflight cost estimate and the completion cost
+  verification; missing either side is treated as an incomplete report.
 - If compaction occurs, stop the milestone and hand off.
 
 ## Autonomy
